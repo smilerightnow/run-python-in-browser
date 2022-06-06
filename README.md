@@ -3,6 +3,9 @@
 - **Bottle.py** for the web server.
 - **CodeMirror** for the frontend code formatting.
 
+#### To run:
+just download the files and type **python server.py** in the terminal. you don't need to install anything.
+
 #### Screenshots:
 - ![Screenshot](https://github.com/smilerightnow/run-python-in-browser/raw/main/Screenshots/1.png "Screenshot")
 
