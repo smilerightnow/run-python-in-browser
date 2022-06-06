@@ -13,10 +13,12 @@ def index():
 		response.set_header('Access-Control-Allow-Origin', "*")
 		body = json.loads(request.body.getvalue())
 		
+		print(body["python"])
+		
 		f = StringIO()
 		sys.stdout = f
 		try:
-			exec(body["python"])
+			exec(body["python"], {})
 		except Exception as e:
 			print(traceback.format_exc())
 		s = f.getvalue()
